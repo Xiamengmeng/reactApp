@@ -2,8 +2,10 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Welcome from './Welcome'
-
+import Namecard from './components/Namecard'
+const tags=['亲切','友好','善良','大方']
 function App() {
+
   return (
     <div className="App">
       <header className="App-header">
@@ -18,8 +20,9 @@ function App() {
           rel="noopener noreferrer"
         >
           HELLO WORLD
+          <Namecard name='voli' number={12345678960} kind tags={tags}/>
         </a>
-        <Welcome/>
+        {/* <Welcome/> */}
       </header>
     </div>
   );
