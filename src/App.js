@@ -3,6 +3,8 @@ import logo from './logo.svg';
 import './App.css';
 import Welcome from './Welcome'
 import Namecard from './components/Namecard'
+import Clock from './components/Clock'
+
 const tags=['亲切','友好','善良','大方']
 function App() {
 
@@ -21,6 +23,8 @@ function App() {
         > */}
           HELLO WORLD
           <Namecard name='voli' number={12345678960} kind tags={tags}/>
+          <Namecard name='moli' number={236568778960} tags={tags}/>
+          <Clock></Clock>
         {/* </a> */}
         {/* <Welcome/> */}
       </header>

@@ -27,7 +27,7 @@ import React from 'react'
 const Namecard=(props)=>{
     const {name,number,kind,tags}=props
     return(
-        <div alert alert-success>
+        <div>
             <h4>{name}</h4>
             <ul>
                 <li>电话：{number}</li>
