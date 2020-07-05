@@ -5,6 +5,8 @@ import Welcome from './Welcome'
 import Namecard from './components/Namecard'
 import Clock from './components/Clock'
 import Eventmont from './components/Eventmont'
+import Greeting from './components/Greeting'
+
 
 const tags=['亲切','友好','善良','大方']
 function App() {
@@ -27,6 +29,8 @@ function App() {
           <Namecard name='moli' number={236568778960} tags={tags}/>
           <Clock></Clock>
           <Eventmont/>
+          {/* <Greeting/> isLogin 默认为false */}
+          <Greeting  isLogin={true}/>
         {/* </a> */}
         {/* <Welcome/> */}
       </header>

@@ -7,7 +7,7 @@ class Eventmont extends React.Component{
     }
 render(){
     return(
-        <button onClick={this.click}>按钮</button>
+        <button onClick={this.click.bind(this)}>按钮</button>
     )
 }
 }
