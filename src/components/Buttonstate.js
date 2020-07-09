@@ -1,9 +1,16 @@
 import React from 'react'
 import { render } from '@testing-library/react'
+// const state={
+//     count:0
+// }
 // function Buttonstate(props){
-
+//     add(()=>{
+//         this.setState({
+//                         count:++this.state.count
+//                     })
+//     })
 //     return(
-//     <button onClick={add}>{props.count}</button>
+//     <button onClick={this.add.bind(this)}>{props.count}</button>
 //     )
 // }
 
@@ -17,7 +24,7 @@ class Buttonstate extends React.Component{
     }
     add(){
         this.setState({
-            count:this.state.count++
+            count:++this.state.count
         })
         console.log(this.state.count)
     }
