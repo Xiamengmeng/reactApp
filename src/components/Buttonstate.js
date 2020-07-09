@@ -16,10 +16,10 @@ class Buttonstate extends React.Component{
 
     }
     add(){
-        this.setState(()=>{
-            this.state.count++;
-            console.log(this.state.count)
+        this.setState({
+            count:this.state.count++
         })
+        console.log(this.state.count)
     }
     render(){
         return(
