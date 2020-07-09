@@ -1,12 +1,12 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-// import Welcome from './Welcome'
 import Namecard from './components/Namecard'
 import Clock from './components/Clock'
 import Eventmont from './components/Eventmont'
 import Greeting from './components/Greeting'
 import Buttonstate from './components/Buttonstate'
+import LoginControl from './components/LoginControl'
 
 const tags=['亲切','友好','善良','大方']
 function App() {
@@ -33,6 +33,7 @@ function App() {
           <Greeting  isLogin={true}/>
         {/* </a> */}
         <Buttonstate/>
+        <LoginControl></LoginControl>
       </header>
     </div>
   );
