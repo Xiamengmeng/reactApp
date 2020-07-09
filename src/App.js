@@ -7,6 +7,7 @@ import Eventmont from './components/Eventmont'
 import Greeting from './components/Greeting'
 import Buttonstate from './components/Buttonstate'
 import LoginControl from './components/LoginControl'
+import Formcontent from './components/Formcontent'
 
 const tags=['亲切','友好','善良','大方']
 function App() {
@@ -33,7 +34,8 @@ function App() {
           <Greeting  isLogin={true}/>
         {/* </a> */}
         <Buttonstate/>
-        <LoginControl></LoginControl>
+        <LoginControl/>
+        <Formcontent/>
       </header>
     </div>
   );
