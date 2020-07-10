@@ -4,7 +4,8 @@ class Formcontent extends React.Component{
     constructor(props){
         super(props)
         this.state={
-            value:''
+            value:'',
+            list:['uu','oo','pp']
         }
     }
     changeHandle(e){
@@ -13,9 +14,13 @@ class Formcontent extends React.Component{
             value:e.target.value
         })
     }
-    clickHandle(){
+    clickHandle(e){
+        // e.preventDefault()
         console.log('click')
         // alert(this.state.value)
+        this.state.list.push(this.state.value)
+        console.log(this.state.list)
+        this.setState({list:this.state.list})
     }
     submitHandle(){
         console.log('submit')
@@ -23,11 +28,20 @@ class Formcontent extends React.Component{
     }
     render(){
         return(
-            <form onSubmit={this.submitHandle.bind(this)}>
-                <label>留言内容：</label>
-                <input type='text' onChange={this.changeHandle.bind(this)}/>
-                <input type='submit' onClick={this.clickHandle.bind(this)} placeholder='留言'/>
-            </form>
+            <div> 
+                <form onSubmit={this.submitHandle.bind(this)}>
+                    <label>留言内容：</label>
+                    <input type='text' onChange={this.changeHandle.bind(this)}/>
+                    <input type='submit' onClick={this.clickHandle.bind(this)} placeholder='留言'/>
+                </form>
+                <ul>
+                    {this.state.list.map((item,index)=>(<li key={index}>{item}</li>))}
+                 {/* <li>{this.state.list.map((item,index)=>{item})}</li> */}
+
+                </ul>
+
+            </div>
+           
            
         )
     }
