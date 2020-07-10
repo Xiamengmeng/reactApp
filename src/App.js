@@ -8,7 +8,8 @@ import Greeting from './components/Greeting'
 import Buttonstate from './components/Buttonstate'
 import LoginControl from './components/LoginControl'
 import Formcontent from './components/Formcontent'
-
+// import BoilingVerdict from './components/BoilingVerdict'
+import Calculator from './components/Calculator'
 const tags=['亲切','友好','善良','大方']
 function App() {
 
@@ -36,6 +37,8 @@ function App() {
         <Buttonstate/>
         <LoginControl/>
         <Formcontent/>
+        {/* <BoilingVerdict celsius={10}/> */}
+        <Calculator/>
       </header>
     </div>
   );
