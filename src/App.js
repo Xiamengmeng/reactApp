@@ -10,6 +10,9 @@ import LoginControl from './components/LoginControl'
 import Formcontent from './components/Formcontent'
 // import BoilingVerdict from './components/BoilingVerdict'
 import Calculator from './components/Calculator'
+import WelcomeDialog from './components/WelcomeDialog'
+
+
 const tags=['亲切','友好','善良','大方']
 function App() {
 
@@ -39,6 +42,7 @@ function App() {
         <Formcontent/>
         {/* <BoilingVerdict celsius={10}/> */}
         <Calculator/>
+        <WelcomeDialog/>
       </header>
     </div>
   );
