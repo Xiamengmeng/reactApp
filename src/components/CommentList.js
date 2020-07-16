@@ -18,3 +18,16 @@ class CommentList extends React.Component{
 }
 
 export default CommentList
+
+
+// vue 的双向绑定原理、
+// Object.defineProperty(obj,'txt',{
+    // getter:function(){
+    //         return obj
+    // }
+    // setter:function(newValue){
+        // document.getElementById('txt').value=newVlaue
+        // document.getElementById('show').innerHTML=newValue
+    // }
+// })
+// document.addEventListener('keyup',(e)=>{obj.txt=e.target.value})
